@@ -9,19 +9,20 @@ This project demonstrates my understanding of the **Aiken development environmen
 1. **Clone the repository:**  
    ```bash
    git clone <your-repo-url>
-Navigate to the project folder:
 
+2.**Navigate to the project folder:**
+```bash
 cd my-project
 
 
 Run all tests:
-
+```bash
 aiken check
 
 
-All tests should pass and trace messages will be displayed for tests that include trace.
 
-Folder Structure
+## Folder Structure
+
 my-project/
 ├── validators/      # Contains all test files for the project
 ├── lib/             # Library code (if needed)
