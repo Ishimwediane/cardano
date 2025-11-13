@@ -1,15 +1,14 @@
-Daily Tasks – Aiken Project
-Project Overview
+# Daily Tasks – Aiken Project
 
-This project demonstrates my understanding of the Aiken development environment and Cardano fundamentals through a simple Daily Tasks validator. The project includes multiple validator files with tests covering boolean logic, integers, strings, mathematical operations, and trace messages for debugging.
+## Project Overview
+This project demonstrates my understanding of the **Aiken development environment** and **Cardano fundamentals** through a simple Daily Tasks validator. The project includes multiple validator files with tests covering boolean logic, integers, strings, mathematical operations, and trace messages for debugging.
 
-Quick Start
+---
 
-Clone the repository:
-
-git clone <your-repo-url>
-
-
+## Quick Start
+1. **Clone the repository:**  
+   ```bash
+   git clone <your-repo-url>
 Navigate to the project folder:
 
 cd my-project
@@ -30,7 +29,7 @@ my-project/
 └── aiken.toml       # Project manifest
 
 
-validators/ – Contains test files for daily tasks, traces, and mathematical operations
+validators/ – Test files for daily tasks, traces, and math operations
 
 lib/ – Reserved for reusable code
 
@@ -63,6 +62,8 @@ Added trace messages to tests for debugging and monitoring execution
 
 Observed output of trace messages when running tests
 
+Created additional tests to experiment with trace placement
+
 Exercise 5: Project Organization
 
 Created multiple validator files for better organization
@@ -73,34 +74,16 @@ Ran all tests and verified proper functionality
 
 Challenges and Solutions
 
-Missing aiken keyword at the top of test files
+Missing aiken keyword at the top of test files: Initially caused aiken check to detect 0 tests with no errors. Solution: Added aiken at the top of each .ak file.
 
-Initially caused aiken check to detect 0 tests with no errors
+Installing Aiken: Latest version gave a “GitHub not found” error. Solution: Manually downloaded executable from GitHub and added it to PATH.
 
-Solution: Added aiken at the top of each .ak file, which resolved the issue
-
-Installing Aiken
-
-Latest version gave a “GitHub not found” error
-
-Solution: Manually downloaded executable from GitHub and added it to PATH
-
-Trace messages not appearing
-
-Learned that trace only works inside test functions with boolean expressions
-
-Updated tests to include trace messages properly
+Trace messages not appearing: Learned that trace only works inside test functions with boolean expressions. Updated tests accordingly.
 
 Lessons Learned
 
-Proper project structure and naming conventions are crucial for Aiken to detect tests
+Proper project structure and naming conventions are crucial for Aiken to detect tests.
 
-Trace messages are a powerful tool for debugging
+Trace messages are a powerful tool for debugging.
 
 Understanding basic Cardano concepts helps in building validator logic
-
-Additional Notes / Questions
-
-I would like feedback on whether my test organization and trace usage are optimal
-
-Are there better ways to structure validator files for readability and scalability?
